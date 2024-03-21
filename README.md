@@ -1,17 +1,11 @@
 # Helm Example Repository
+* Helm repository for example charts
 
-Ahoy world!  I'm a Helm repository for example charts.
-
-## Get started
-
-Add this repository to Helm.
-
-```
-helm repo add examples https://helm.github.io/examples
-```
-
-Install an example.
-
-```
-helm install ahoy examples/hello-world
-```
+## How to run it?
+* Add this repository to Helm
+  * `helm repo add examples https://helm.github.io/examples`
+    * TODO: Why does that URL is valid? Which criteria are necessaries? WHy not 'https://github.com/dancer1325/helm-examples'
+* Install an example
+  * `helm install ahoy examples/hello-world`
+    * 'NOTES.txt' is the output
+    * `kubectl get all` to check all the packaged resources have been installed
