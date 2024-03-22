@@ -5,13 +5,9 @@
 # Ignore compiled templates
 charts/*/templates/*.tpl
 
-# Ignore helm's cached values file
-values*.yaml
-
 # Ignore Helm's generated files
 charts/*/charts
 charts/*/ci
-charts/*/README.md
 charts/*/requirements.lock
 charts/*/requirements.yaml
 charts/*/values.schema.json
