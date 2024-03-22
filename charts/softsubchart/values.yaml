@@ -1,0 +1,9 @@
+global:
+  image:
+    repository: nginx
+    tag: latest
+
+nginx:
+  replicaCount: 3
+
+subchartEnabled: true
