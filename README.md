@@ -32,3 +32,16 @@
 * `helm rollback`
   * `helm list` to check that a new release has been created
   * `kubectl get pods` to check that the name of the pod is 'simple-1' again
+
+# Chart Repository / Repo
+* `helm repo list` to list chart repositories
+
+# Values
+* `helm install simple simple`
+  * `kubectl get pods` to check that podName is 'simple' -> 'Values.yaml' used by default
+* ways to pass customized values
+  * `-f otherValue.yaml`
+    * `helm upgrade -f simple/customValues.yaml simple simple` & `kubectl get all` to check that podName is now 'simple-custom'
+    * `helm uninstall simple` & `helm install -f simple/customValues.yaml simple simple` & `kubectl get all` to check that podName is now 'simple-custom'
+  * `--set key=vale`
+    * `helm upgrade --set name=simple-upgrade simple simple` & `kubectl get all` to check that podName is now 'simple-upgrade'
