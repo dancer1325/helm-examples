@@ -19,6 +19,11 @@
   * `helm list` to check all the releases installed
   * `helm status hii` to check the status of the release
 
+# Helm config
+* Execute the commands of 'Release'
+* `kubectl get secrets` to check the Kubernetes Secrets created each time a release exists
+* `kubectl get secret/SecretName -o json` to check the data with key 'release'
+
 # Release Number
 * `helm upgrade hii hello-world`
   * `helm list` to check that a new release number has been created
